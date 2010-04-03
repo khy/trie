@@ -1,0 +1,11 @@
+= Trie
+
+Implements a collection of unique strings, optimized for fast retrieval via prefix, even across very large collections.
+
+== Use
+
+	trie = Trie.new
+	trie.add 'aardvark'
+	#...a dictionary's worth of adding...
+	trie.add 'zyzzyva'
+	trie.prefixed_by 'dog' #=> ['dog', 'doghouse', 'dogma',...
